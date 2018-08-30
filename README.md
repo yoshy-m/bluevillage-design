@@ -1,0 +1,2 @@
+# bluevillage-design
+BlueVillageのWebサイト用デザインソースコード
