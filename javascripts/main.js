@@ -35,3 +35,19 @@ $(function() {
     }
   });
 });
+
+//valentine top
+$(document).ready(function(){
+    var fixedElm = $('.mainVisual__bg');
+    var cancellationElm = $('.kn__content');
+ 
+    var fixedHeight = fixedElm.height();
+    var cancellationVal = cancellationElm.offset().top - $(window).height() + fixedHeight;
+    $(window).on('scroll',function(){
+        if ($(window).scrollTop() < cancellationVal) {
+            fixedElm.css('position', 'fixed');
+        } else {
+            fixedElm.css('position', 'relative');
+        }
+    });
+});
