@@ -62,7 +62,7 @@ abbr[title] {
 }
 
 a {
-  color: #070b36;
+  color: #412820;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
   text-decoration: none;
@@ -671,6 +671,11 @@ textarea{
 	font-size: 1.2rem;
 	line-height: 1.8em;
 	letter-spacing: 0;
+}
+.order__txt a{
+	color: #412820;
+	font-weight: bold;
+	text-decoration: underline;
 }
 .kn__footer{
 	position: relative;
