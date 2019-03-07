@@ -39,7 +39,7 @@ $(function() {
 //valentine top
 $(document).ready(function(){
     var fixedElm = $('.mainVisual__bg');
-    var cancellationElm = $('.kn__content');
+    var cancellationElm = $('.lineup');
  
     var fixedHeight = fixedElm.height();
     var cancellationVal = cancellationElm.offset().top - $(window).height() + fixedHeight;
