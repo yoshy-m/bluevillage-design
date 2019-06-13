@@ -447,6 +447,10 @@ img{
 .member .heading{
 	background: url(../images/ttl_member.svg) no-repeat;
 }
+.ig .heading{
+	background: url(../images/ttl_ig.svg) no-repeat;
+	background-position: center;
+}
 .kn__footer .heading{
 	background: url(../images/ttl_message.svg) no-repeat;
 }
@@ -688,6 +692,25 @@ img{
 	margin-top: 16px;
 	line-height: 1.8em;
 }
+.ig{
+	text-align: center;
+}
+.ig .heading__txt{
+	margin: 16px 0 40px;
+}
+.ig__wrap{
+	margin: 0 auto;
+}
+.ig__trigger{
+	display: block;
+	margin-bottom: 24px;
+	font-weight: bold;
+}
+.ig__img{
+	display: block;
+	width: 30%;
+	margin: 0 auto 8px;
+}
 .kn__footer{
 	position: relative;
 	z-index: 3;
@@ -905,6 +928,10 @@ img{
 	.profile__img{
 		width: 160px;
 		margin-left: 16px;
+	}
+	.ig__img{
+		width: 200px;
+		margin: 0 auto 8px;
 	}
 	.kn__footer{
 		background: url(../images/footer.png) no-repeat center;
