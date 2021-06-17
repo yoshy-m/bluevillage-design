@@ -36,6 +36,24 @@ $(function() {
   });
 });
 
+// header apear
+$(document).ready(function(){
+  fixed_menu = 0;
+  $(window).scroll(function(){
+    if( $(this).scrollTop() > 70 ){
+      if(fixed_menu==0){
+        $('.header').slideDown(400);
+        fixed_menu=1;
+      }
+    } else {
+      if(fixed_menu){
+        $('.header').slideUp(200);
+        fixed_menu=0;
+      }
+    }
+  });
+});
+
 //valentine top
 $(document).ready(function(){
     var fixedElm = $('.mainVisual__bg');

@@ -17,340 +17,130 @@
     <meta property="og:title" content="ようこそ。「あおいろのかくめい」に。">
     <meta name="description" content="Blue Village は自由な「つくりて」が集う拡張家族です。">
     <meta property="og:description" content="Blue Village は自由な「つくりて」が集う拡張家族です。">
-    <meta property="og:url" content="http://bluevillage.fun">
+    <meta property="og:url" content="https://bluevillage.fun">
     <meta property="og:locale" content="ja_JP">
     <meta property="og:type" content="website">
     <meta property="og:image" content="./images/ogp.png">
     <link rel="shortcut icon" href="./images/favicon.ico" >
     <link rel="stylesheet" href="./stylesheets/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./javascripts/main.js"></script>
   </head>
   <body>
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = 'https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v3.1';
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
-    <div class="wrap">
-      <header class="bv__header">
-        <h1 class="header__logo"><a href="#" class="header__logoLink">Blue Village</a></h1>
-        <p class="header__btn"><span class="header__btnToggle">MENU</span></p>
-        <nav class="header__nav">
-          <ul class="header__navList">
-            <li class="header__navItem"><a href="#greeting" class="header__navLink">ごあいさつ</a></li>
-            <li class="header__navItem"><a href="#gallery" class="header__navLink">ギャラリー</a></li>
-            <li class="header__navItem"><a href="#member" class="header__navLink">メンバー</a></li>
-            <li class="header__navItem"><a href="#kananola" class="header__navLink">kananola</a></li>
-            <li class="header__navItem"><a href="#marche" class="header__navLink">Marche</a></li>
-            <li class="header__navItem"><a href="#news" class="header__navLink">お知らせ</a></li>
-            <li class="header__navItem sns">Follow us</li>
-            <li class="header__navItem snsItem"><a class="snsItem__fb" href="https://www.facebook.com/Blue-Village-2052221851463432" target="_blank" class="header__navLink">Facebookページ</a></li>
-            <li class="header__navItem snsItem"><a class="snsItem__yt" href="https://www.youtube.com/channel/UCHLGboCCWAPtXgfeK8MUnUA" target="_blank" class="header__navLink">youtube</a></li>
-            <li class="header__navItem snsItem"><a class="snsItem__nt" href="https://note.mu/bluevillage" target="_blank" class="header__navLink">note</a></li>
+    <header class="header">
+      <h1 class="header__logo"><a href="#" class="header__logoLink">Blue Village</a></h1>
+      <p class="header__btn"><span class="header__btnToggle">MENU</span></p>
+      <nav class="header__nav">
+        <ul class="header__navList">
+          <li class="header__navItem"><a href="./story/" class="header__navLink story">Story</a></li>
+          <li class="header__navItem"><a href="./assemble/" class="header__navLink assemble">Assemble</a></li>
+          <li class="header__navItem"><a href="./stay/" class="header__navLink stay">Stay</a></li>
+          <li class="header__navItem"><a href="./days/" class="header__navLink days">Days</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="top">
+      <div class="mainVisual">
+        <p class="mainVisual__ttl"><img src="./images/logo_main.png" alt="Blue Village"></p>
+      </div>
+      <div class="intro">
+        <div class="message">
+          <p>青い星の夢から<br>
+          聴こえたその唄は<br>
+          誰しもの心に流れていて<br>
+          あなたが何者かである必要はない<br>
+          それに触れたとき<br>
+          光を放つ<br>
+          パズルのピース<br>
+          ここに集う<br>
+          日々の暮らしの中で<br>
+          いのちと出会えるよろこびを<br>
+          ひとつひとつ重ね合わせて<br>
+          完成図のない<br>
+          セカイを作り続けていこう<br>
+          その唄を響かせていこう</p>
+        </div>
+        <div class="greeting">
+          <p>初めまして、Blue Village のカナとゴウスケです。
+          三年前、都会の息苦しさから逃れるように始まった私たちの旅ですが、洞爺湖に出会い、ここで暮らしていくうちに、自然が与えてくれる無償の愛や、創造的に生きることの豊かさを知りました。</p>
+          <p>一方で、社会は大きく揺れ動き、現在人類はかつてない不安の渦中にいます。
+          私たちはきっと地球から「これからの在り方」を問われているのでしょう。
+          そんな今だからこそ、自然と調和して暮らす豊かさ、創造的に生きることの喜びを分かち合えたらと思います。</p>
+          <p>2021年、これからBlue Villageの物語の第二章が始まります。
+          私たちはこの場の案内人として旅人たちを迎え入れ、共に暮らし、創っていく中で、「地球からの問いかけ」について、その答えを探していけたらと思っています。</p>
+          <p>そして、ここで生まれた美しい循環や豊かさ、未来へのインスピレーションが、水面に生まれた波紋のように、少しずつ世界に波及していきますように。
+          その広がりの先に、本来の循環の営みを取り戻し、全てのいのちが大切にされる ”あおい地球” の姿がありますように。</p>
+          <p>そんな願いを込めて、今日も、Blue Villageでの暮らしを大切に創っています。</p>
+        </div>
+      </div>
+      <section class="section story">
+        <div class="txtWrap">
+          <h2 class="heading">Story</h2>
+          <p>古くから青い星が見ている夢があります。<br>
+          その夢は歌となり、その星に住む人々の心の中に流れていますが、<br class="pc">
+          静かに耳を澄まさなければ聴こえてきません。<br>
+          この物語はその唄を聴いた夫婦から始まる物語です。</p>
+          <a href="./story/" class="btn">BlueVillageの物語を読む</a>
+        </div>
+      </section>
+      <section class="section assemble">
+        <div class="txtWrap">
+          <h2 class="heading">Assemble</h2>
+          <p>ここには、”何もない” があって、ここでは、”何者でもない” であっていい。BlueVillageは、あなたの夢と現実の境目が薄くなる焚き火場のような場所。</p>
+          <a href="./assemble/" class="btn">BlueVillageに集う</a>
+        </div>
+      </section>
+      <section class="section stay">
+        <div class="txtWrap">
+          <h2 class="heading">Stay</h2>
+          <p>自分と、そして自然と、再び出会い、そして繋がる体験を。</p>
+          <a href="./stay/" class="btn">BlueVillageに泊まる</a>
+        </div>
+      </section>
+      <section class="section days">
+        <div class="txtWrap">
+          <h2 class="heading">Days</h2>
+          <p>鳥の声で目を覚まし、湧き水で身体を潤して、太陽を浴びる。<br>
+          この場がより美しい循環を紡いでいけるよう、愛を込めて手と身体を動かす日々。<br>
+          Blue Villageでの暮らしは、そんな暮らし。</p>
+          <a href="./days/" class="btn">BlueVillageで過ごす</a>
+        </div>
+      </section>
+      <section class="section meguriya">
+        <div class="txtWrap">
+          <h2 class="heading">めぐりや</h2>
+          <p>あなたの生き方が、より美しい「めぐり」を紡いでいく。<br>
+          それは、一つの「選択」からはじまります。<br>
+          めぐりやでは、人と自然に優しいアイテムを取り扱っています。</p>
+          <a href="" class="btn">めぐりやのサイトをみる</a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__wrap">
+        <a href="#" class="footer__logo">Blue Village</a>
+        <div class="footer__info">
+          <ul class="menu">
+            <li class="menu__item">
+              <a href="https://www.facebook.com/Blue-Village-2052221851463432" target="_blank">Facebook</a>
+            </li>
+            <li class="menu__item">
+              <a class="ig" href="https://www.instagram.com/bluevillage.fun/" target="_blank">Instagram</a>
+            </li>
+            <li class="menu__item">
+              <a class="yt" href="https://www.youtube.com/channel/UCHLGboCCWAPtXgfeK8MUnUA" target="_blank">YouTube</a>
+            </li>
+            <li class="menu__item">
+              <a class="nt" href="https://note.mu/bluevillage" target="_blank">note</a>
+            </li>
           </ul>
-        </nav>
-      </header>
-      <main class="bv__content">
-        <div class="mainVisual">
-          <div class="mainVisual__movWrap">
-            <video class="mainVisual__mov" src="./images/main.mp4" autoplay="" muted="" playsinline="" loop=""></video>
-          </div>
-          <div class="mainVisual__imgWrap">
-            <p class="mainVisual__img"><img src="./images/logo_main.svg" alt="Blue Village"></p>
-            <p class="mainVisual__txt">わたしたちの物語は、<br class="sp">北海道は洞爺湖の月浦に<br>自然と共生するちいさな小屋を<br class="sp">創るところから始まる</p>
-          </div>  
+          <a href="" class="contact">CONTACT</a>
         </div>
-        <section id="greeting" class="greeting section">
-          <div class="section__inr">
-            <h2 class="heading">ごあいさつ</h2>
-            <div class="greeting__txtWrap">
-              <p class="greeting__txtCopy pc">胸の高鳴りに素直になっていくことが<br>
-                純粋に夢中になっていくことが<br>
-                遊びに真剣になっていくことが<br>
-                ゆたかな自然を享受していくことが<br>
-                愛する仲間と一緒に創っていくことが<br>
-                そんな青色の日々が<br>
-                セカイをひっくり返すかもしれない<br>
-                ようこそ。<br>
-                「あおいろのかくめい」に。</p>
-              <p class="greeting__txtCopy sp">胸の高鳴りに素直になっていくことが<br>
-                純粋に夢中になっていくことが<br>
-                遊びに真剣になっていくことが<br>
-                ゆたかな自然を享受していくことが<br>
-                愛する仲間と一緒に創っていくことが</p>
-              <p class="greeting__txtCopy sp">そんな青色の日々が<br>
-                セカイをひっくり返すかもしれない<br>
-                ようこそ。<br>
-                「あおいろのかくめい」に。</p>
-              <figure class="greeting__imgWrap">
-                <img class="greeting__img" src="./images/about.jpg" alt="">
-              </figure>
-              <div class="greeting__txtInr">
-                <p class="greeting__txt">Blue Village は自由な「つくりて」が集う拡張家族です。<br>
-                わたしたちの物語は北海道は洞爺湖の月浦に自然と共生する小さな小屋を創るところから始まります。この小屋づくりはわたしたちにとって旧パラダイムからの卒業制作であり、大自然とともに、ただただ夢中になって遊んでいくことで「現実」は大きく変化していくと考えています。
-                <br>これからどんな物語になっていくのか、それは私たちにもわかりませんが、これから出会う仲間と共に創造していくこと、家族の輪が広がっていくことをとても楽しみにしています。</p>
-                <p class="greeting__subTtl">ロゴについて</p>
-                <p class="greeting__txt">新しいセカイへの旅路の友として、大きな背中をもった象をロゴにしました。</p>
-              </div>
-            </div>
-          </div>          
-        </section>
-        <section id="gallery" class="gallery section">
-          <div class="section__inr">
-            <h2 class="heading">ギャラリー</h2>
-            <div class="movie__wrap">
-              <iframe src="https://www.youtube.com/embed/uBeVvZWyuOA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            </div>
-            <ul class="gallery__list">
-              <li class="gallery__item">
-                <img class="gallery__img" src="./images/img_gallery01.jpg" alt="">
-              </li>
-              <li class="gallery__item">
-                <img class="gallery__img" src="./images/img_gallery02.jpg" alt="">
-              </li>
-              <li class="gallery__item">
-                <img class="gallery__img" src="./images/img_gallery03.jpg" alt="">
-              </li>
-              <li class="gallery__item">
-                <img class="gallery__img" src="./images/img_gallery04.jpg" alt="">
-              </li>
-              <li class="gallery__item">
-                <img class="gallery__img" src="./images/img_gallery05.jpg" alt="">
-              </li>
-              <li class="gallery__item">
-                <img class="gallery__img" src="./images/img_gallery06.jpg" alt="">
-              </li>
-              <li class="gallery__item">
-                <img class="gallery__img" src="./images/img_gallery07.jpg" alt="">
-              </li>
-              <li class="gallery__item">
-                <img class="gallery__img" src="./images/img_gallery08.jpg" alt="">
-              </li>
-              <li class="gallery__item">
-                <img class="gallery__img" src="./images/img_gallery09.jpg" alt="">
-              </li>
-              <li class="gallery__item">
-                <img class="gallery__img" src="./images/img_gallery10.jpg" alt="">
-              </li>
-              <li class="gallery__item">
-                <img class="gallery__img" src="./images/img_gallery11.jpg" alt="">
-              </li>
-              <li class="gallery__item">
-                <img class="gallery__img" src="./images/img_gallery12.jpg" alt="">
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section id="member" class="member section">
-          <div class="section__inr">
-            <h2 class="heading">メンバー</h2>
-            <ul class="member__list">
-              <li class="member__item">
-                <img class="member__img" src="./images/img_member01.png" alt="">
-                <p class="member__role">発起人、詠い人</p>
-                <p class="member__name">ごーすけ</p>
-                <ul class="member__sns">
-                  <li class="member__snsItem">
-                    <a class="member__snsTrigger fb" target="_blank" href="https://www.facebook.com/gosuke.uno">Facebook</a>
-                  </li>
-                  <li class="member__snsItem">
-                    <a class="member__snsTrigger tw" target="_blank" href="https://twitter.com/aoironokakumei">Twitter</a>
-                  </li>
-                  <li class="member__snsItem">
-                    <a class="member__snsTrigger ig" target="_blank" href="https://www.instagram.com/gosukeuno/">Instagram</a>
-                  </li>
-                  <li class="member__snsItem">
-                    <a class="member__snsTrigger sc" target="_blank" href="https://soundcloud.com/uno-gosuke">Soundcloud</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="member__item">
-                <img class="member__img" src="./images/img_member02.png" alt="">
-                <p class="member__role">食のゆるゆる探求者</p>
-                <p class="member__name">かな</p>
-                <ul class="member__sns">
-                  <li class="member__snsItem">
-                    <a class="member__snsTrigger fb" target="_blank" href="https://www.facebook.com/kana.kobayashi.16940">Facebook</a>
-                  </li>
-                  <li class="member__snsItem">
-                    <a class="member__snsTrigger ig" target="_blank" href="https://www.instagram.com/kana_u711/">Instagram</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="member__item">
-                <img class="member__img" src="./images/img_member03.png" alt="">
-                <p class="member__role">音の錬金術師、火の神</p>
-                <p class="member__name">ガク</p>
-                <ul class="member__sns">
-                  <li class="member__snsItem">
-                    <a class="member__snsTrigger fb" target="_blank" href="https://www.facebook.com/gaku.nagashima.3">Facebook</a>
-                  </li>
-                  <li class="member__snsItem">
-                    <a class="member__snsTrigger ig" target="_blank" href="https://www.instagram.com/gakunaga126/">Instagram</a>
-                  </li>
-                  <li class="member__snsItem">
-                    <a class="member__snsTrigger sc" target="_blank" href="https://soundcloud.com/gakunagashima">Soundcloud</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="member__item">
-                <img class="member__img" src="./images/img_member04.png" alt="">
-                <p class="member__role">愛の閃光</p>
-                <p class="member__name">だいすけ</p>
-                <ul class="member__sns">
-                  <li class="member__snsItem">
-                    <a class="member__snsTrigger fb" target="_blank" href="https://www.facebook.com/daisuke344">Facebook</a>
-                  </li>
-                  <li class="member__snsItem">
-                    <a class="member__snsTrigger tw" target="_blank" href="https://twitter.com/dice344">Twitter</a>
-                  </li>
-                  <li class="member__snsItem">
-                    <a class="member__snsTrigger ig" target="_blank" href="https://www.instagram.com/dice344/">Instagram</a>
-                  </li>
-                  <li class="member__snsItem">
-                    <a class="member__snsTrigger sc" target="_blank" href="https://soundcloud.com/dice344">Soundcloud</a>
-                  </li>
-                  <li class="member__snsItem">
-                    <a class="member__snsTrigger hp" target="_blank" href="http://dicek.me">Portfolio</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="member__item">
-                <img class="member__img" src="./images/img_member05.png" alt="">
-                <p class="member__role">躍る絵描き</p>
-                <p class="member__name">しゅん</p>
-                <ul class="member__sns">
-                  <li class="member__snsItem">
-                    <a class="member__snsTrigger ig" target="_blank" href="https://www.instagram.com/shunsuke_01/">Instagram</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="member__item">
-                <img class="member__img" src="./images/img_member06.png" alt="">
-                <p class="member__role">なんでもデザイン厨</p>
-                <p class="member__name">よっしー</p>
-                <ul class="member__sns">
-                  <li class="member__snsItem">
-                    <a class="member__snsTrigger ig" target="_blank" href="https://www.instagram.com/yoshy62_m/">Instagram</a>
-                  </li>
-                  <li class="member__snsItem">
-                    <a class="member__snsTrigger nt" target="_blank" href="https://note.mu/yoshy_m">note</a>
-                  </li>
-                  <li class="member__snsItem">
-                    <a class="member__snsTrigger hp" target="_blank" href="http://www.imxprs.com/free/yoshimimurakami/me">Portfolio</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="member__item">
-                <img class="member__img" src="./images/img_member07.png" alt="">
-                <p class="member__role">奏で人</p>
-                <p class="member__name">りょう</p>
-                <ul class="member__sns">
-                  <li class="member__snsItem">
-                    <a class="member__snsTrigger fb" target="_blank" href="https://www.facebook.com/ryo.horinouchi.73">Facebook</a>
-                  </li>
-                  <li class="member__snsItem">
-                    <a class="member__snsTrigger tw" target="_blank" href="https://twitter.com/arkonthewind">Twitter</a>
-                  </li>
-                  <li class="member__snsItem">
-                    <a class="member__snsTrigger ig" target="_blank" href="https://www.instagram.com/ryo_arkonthewind/">Instagram</a>
-                  </li>
-                  <li class="member__snsItem">
-                    <a class="member__snsTrigger sc" target="_blank" href="https://soundcloud.com/ryo-horinouchi">Soundcloud</a>
-                  </li>
-                  <li class="member__snsItem">
-                    <a class="member__snsTrigger hp" target="_blank" href="http://arkonthewind.net">Portfolio</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="member__item">
-                <img class="member__img" src="./images/img_member08.png" alt="">
-                <p class="member__role">響のヨギーニ</p>
-                <p class="member__name">りさ</p>
-                <ul class="member__sns">
-                  <li class="member__snsItem">
-                    <a class="member__snsTrigger fb" target="_blank" href="https://www.facebook.com/lisa.honmou">Facebook</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="member__item">
-                <img class="member__img" src="./images/img_member09.png" alt="">
-                <p class="member__role">神出鬼没のコーヒー屋</p>
-                <p class="member__name">しょーへい</p>
-                <ul class="member__sns">
-                  <li class="member__snsItem">
-                    <a class="member__snsTrigger fb" target="_blank" href="https://www.facebook.com/profile.php?id=100007771262886">Facebook</a>
-                  </li>
-                  <li class="member__snsItem">
-                    <a class="member__snsTrigger tw" target="_blank" href="https://twitter.com/BianchiS2000">Twitter</a>
-                  </li>
-                  <li class="member__snsItem">
-                    <a class="member__snsTrigger ig" target="_blank" href="https://www.instagram.com/shohei.nikon/">Instagram</a>
-                  </li>
-                  <li class="member__snsItem">
-                    <a class="member__snsTrigger nt" target="_blank" href="https://note.mu/tomoniikiru">note</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section id="kananola" class="kananola">
-          <div class="kananola__imgWrap">
-            <img class="kananola__img" src="./images/img_kananola.jpg" alt="">
-            <img class="kananola__subImg" src="./images/bg_kananola.jpg" alt="">
-          </div>
-          <div class="kananola__txtWrap">
-            <h2 class="heading">kananola</h2>
-            <p class="kananola__txt">食のゆるゆる探求者、かなが発信するBlueVillageオリジナルグラノーラ。<br>
-              小麦、白砂糖、乳製品は使わず、有機のオートミール、フリーズドライフルーツやナッツを使用することで、誰でも美味しくて安心して食べることができるオーガニックグラノーラをつくっています。</p>
-            <p class="kananola__txt">
-            ・Blue Villageの世界観を届けること<br>
-            ・地球との繋がりを感じられること<br>
-            ・原材料にこだわり、誰でも安心して美味しく食べれること<br>
-            ・ローウェイスト（できる限りゴミを出さない）でローカルに広がる設計を立てること<br>
-            を大事に、「美味しい」という体験を通して、自然との共生の在り方やライフスタイルをメッセージとして伝えていけたらと思っています。</p>
-            <p class="kananola__subTxt">【原材料】<br>
-            有機オートミール(アメリカ産)、熊本県産米粉、鹿児島県産洗双糖、純正菜種油、有機カカオパウダー、有機カシューナッツ、Endanderd species chocolate、有機棗、有機フリーズドライいちご</p>
-            <a class="btn" href="./kananola/">詳しくはこちら</a>
-          </div>
-        </section>
-        <section id="marche" class="marche section">
-          <div class="section__inr">
-            <h2 class="heading">Blue Village Marche</h2>
-            <div class="marche__txtWrap">
-              <div class="marche__txtInr">
-                <img class="marche__img" src="./images/logo_marche.svg" alt="Blue Village Marche">
-                <p class="marche__txt">Blue Village Marcheには、地球を愛するつくりてが創るものがあつまっています。<br>それぞれにストーリーがあり、どんな人が、どんな想いで、つくっているのか。地球への愛をどう表現しているのか。という、こだわりの詰まったものをBlue Villageがセレクトし、販売しています。</p>
-              </div>
-              <a class="btn" href="https://bluevillage.base.shop/" target="_blank">Marcheをみる</a>
-            </div>
-          </div>
-        </section>
-      </main>
-      <footer class="bv__footer">
-        <div id="news" class="news">
-          <div class="section__inr">
-            <div class="news__ttlWrap">
-              <h2 class="heading">お知らせ</h2>
-              <p class="news__txt">Facebooページにて最新情報をお知らせしていきます。<br>
-                ぜひこちらから応援してください！<br>
-                また、一緒にブルービレッジを作ってくれるメンバーも募集しています。</p>
-            </div>
-            <div class="news__widget">
-              <div class="fb-page" data-href="https://www.facebook.com/Blue-Village-2052221851463432" data-tabs="timeline" data-width="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Blue-Village-2052221851463432" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Blue-Village-2052221851463432">Blue Village</a></blockquote></div>
-            </div>
-          </div>
-        </div>
-        <p class="footer__copyrightWrap">
-          <small class="footer__copyright">&copy;2018 Blue Village</small>
+        <p class="footer__copyright">
+          <small>&copy; 2021 Blue Village</small>
         </p>
-      </footer> 
-    </div>
-    <script src="./javascripts/common.js"></script>
+      </div>
+    </footer>
   </body>
 </html>
