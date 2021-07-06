@@ -228,18 +228,10 @@ img {
     display: block;
     width: 100%;
     height: 2.4rem;
-    margin: 4rem 0;
-    text-indent: 100%;
-    overflow: hidden;
-    background: url(../images/ttl_story.svg) center no-repeat;
-    background-size: contain; }
-    .header .header__navLink.assemble {
-      background-image: url(../images/ttl_assemble.svg); }
-    .header .header__navLink.stay {
-      background-image: url(../images/ttl_stay.svg); }
-    .header .header__navLink.days {
-      background-image: url(../images/ttl_days.svg); }
+    margin: 4rem 1rem; }
 
+.header02 .header__navLink {
+  color: white; }
 .header02 .header__logoLink {
   background-image: url(../images/logo_wt.svg); }
 
@@ -251,9 +243,9 @@ img {
   background: url(../images/ttl_story_wt.svg) center no-repeat;
   background-size: contain; }
 
-.assemble .heading {
-  width: 161px;
-  background-image: url(../images/ttl_assemble.svg); }
+.nurture .heading {
+  width: 125px;
+  background-image: url(../images/ttl_nurture.svg); }
 
 .stay .heading {
   width: 70px;
@@ -334,7 +326,7 @@ img {
   .footer .footer__copyright {
     margin-top: 3rem;
     font-size: 1.2rem; }
-  .footer.line::before {
+  .footer::before {
     content: "";
     display: block;
     width: 90%;
@@ -343,6 +335,9 @@ img {
     position: absolute;
     top: 0;
     left: 5%; }
+
+.story + .footer::before {
+  display: none; }
 
 .top .mainVisual {
   width: 100%;
@@ -407,7 +402,7 @@ img {
   width: 50%;
   height: 50vw;
   background-image: url(../images/logo_meguriya.png); }
-.top .assemble .heading {
+.top .nurture .heading {
   margin-bottom: 50vw; }
 .top .stay .heading {
   margin-bottom: 70vw; }
@@ -444,6 +439,24 @@ img {
   .top .meguriya .imgWrap {
     width: 60%;
     margin: 2rem auto 0; }
+.top .sns {
+  width: 90%;
+  margin: 6rem auto;
+  text-align: center; }
+  .top .sns .sns__item {
+    padding: 4rem 0; }
+  .top .sns .sns__ttl {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #3b576a; }
+  .top .sns .prof {
+    display: block;
+    width: 20%;
+    margin: 2rem auto .5rem; }
+  .top .sns .name {
+    margin-bottom: 2rem; }
+  .top .sns .fb-page {
+    width: 100%; }
 
 .layer .headingWrap {
   padding: 8rem 0 4rem;
@@ -478,7 +491,7 @@ img {
   content: "";
   width: 100%;
   height: 100vw;
-  background: url(../images/assemble_main.png) center bottom no-repeat;
+  background: url(../images/nurture_main.png) center bottom no-repeat;
   background-size: 100%;
   position: absolute;
   bottom: 0; }
@@ -496,10 +509,43 @@ img {
   display: block;
   width: 100%;
   height: 96vw;
-  background: url(../images/assemble_img01.png) center no-repeat;
+  background: url(../images/nurture_img01.png) center no-repeat;
   background-size: 100%; }
 .layer .section02::after {
-  background-image: url(../images/assemble_img02.png); }
+  background-image: url(../images/nurture_img02.png); }
+.layer .price {
+  width: 96%;
+  margin: 8rem auto;
+  padding: 8rem 2rem;
+  background: #f2f7f7;
+  border-radius: 4px; }
+  .layer .price p + p,
+  .layer .price .txtInr + .txtInr {
+    margin-top: 3rem; }
+  .layer .price b {
+    display: block;
+    font-size: 1.6rem; }
+.layer .price::after {
+  content: '';
+  display: block;
+  width: 80%;
+  height: 80vw;
+  margin: 1rem auto 0;
+  background: url(../images/stay_img03.png) center bottom no-repeat;
+  background-size: 100%; }
+.layer .requirements__wrap {
+  margin-top: 6rem; }
+  .layer .requirements__wrap dl + dl {
+    margin-top: 3rem; }
+  .layer .requirements__wrap dt {
+    font-weight: bold; }
+  .layer .requirements__wrap dd {
+    margin-top: 1rem;
+    font-size: 1.5rem; }
+    .layer .requirements__wrap dd .sup {
+      display: block;
+      margin-top: .5rem;
+      font-size: 1.4rem; }
 
 .story p {
   font-family: "Sawarabi Mincho", "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
@@ -516,22 +562,14 @@ img {
     color: white; }
   .layer.story .txtWrap {
     width: 90%;
-    margin: 0 auto; }
-    .layer.story .txtWrap * + * {
+    margin: 0 auto;
+    text-align: center; }
+    .layer.story .txtWrap span {
+      display: block; }
+    .layer.story .txtWrap span + br {
+      display: none; }
+    .layer.story .txtWrap p + p {
       margin-top: 4rem; }
-  .layer.story .txtWrap + .txtWrap {
-    margin-top: 8rem;
-    position: relative; }
-  .layer.story .txtWrap + .txtWrap::before {
-    content: "";
-    display: block;
-    width: 10%;
-    height: 1px;
-    background: white;
-    position: absolute;
-    top: -4rem;
-    left: 50%;
-    transform: translate(-50%, 0); }
 
 .layer.story::before {
   content: "";
@@ -543,45 +581,47 @@ img {
   position: fixed;
   z-index: -1; }
 
-.layer.assemble .link {
-  padding: 8rem 0;
-  background: #f7fafa; }
-  .layer.assemble .link .link__box.days {
-    margin-top: 6rem; }
-  .layer.assemble .link .link__box::before {
-    content: "";
-    display: block;
-    width: 96%;
-    height: 70vw;
-    margin: 0 auto;
-    background: url(../images/stay_main.png) center no-repeat;
-    background-size: 100%; }
-  .layer.assemble .link .link__box.days::before {
-    background-image: url(../images/days_main.png); }
+.layer.nurture .subTtl {
+  font-size: 2rem;
+  color: #3b576a;
+  margin-bottom: 3rem; }
+.layer.nurture .retreat {
+  background: #f7fafa;
+  padding: 8rem 2%; }
+  .layer.nurture .retreat .ttlWrap {
+    width: 94%;
+    margin: 0 auto; }
+  .layer.nurture .retreat .retreat__item {
+    background: white;
+    padding: 6rem 2rem;
+    margin: 4rem auto;
+    overflow: hidden; }
+    .layer.nurture .retreat .retreat__item .subTtlWrap::after {
+      content: "";
+      display: block;
+      width: 60%;
+      height: 70vw;
+      margin: 2rem 0 0 30%;
+      background: url(../images/nurture_img02.png) center no-repeat;
+      background-size: 100%; }
+    .layer.nurture .retreat .retreat__item.item02 .subTtlWrap::after {
+      width: 90%;
+      height: 70vw;
+      margin-left: 10%;
+      background-image: url(../images/nurture_img03.png); }
+    .layer.nurture .retreat .retreat__item time {
+      display: block;
+      float: left; }
+      .layer.nurture .retreat .retreat__item time + span {
+        display: block;
+        width: 80%;
+        margin-left: 20%; }
+    .layer.nurture .retreat .retreat__item .btn {
+      margin-top: 6rem; }
 
-.layer.stay .karip,
-.layer.stay .price {
-  width: 96%;
-  margin: 8rem auto;
-  padding: 8rem 2rem;
-  background: #f2f7f7; }
-  .layer.stay .karip p + p,
-  .layer.stay .karip .txtInr + .txtInr,
-  .layer.stay .price p + p,
-  .layer.stay .price .txtInr + .txtInr {
-    margin-top: 3rem; }
-  .layer.stay .karip b,
-  .layer.stay .price b {
-    display: block;
-    font-size: 1.6rem; }
-.layer.stay .karip::after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 50vw;
-  margin-top: 1rem;
-  background: url(../images/stay_img01.png) center bottom no-repeat;
-  background-size: 100%; }
+.layer.stay .subTxt {
+  width: 90%;
+  margin: 4rem auto; }
 .layer.stay .section::after {
   height: 85vw;
   background-image: url(../images/stay_img02.png); }
@@ -589,23 +629,19 @@ img {
   background-image: url(../images/stay_img03.png);
   background-size: 70%; }
 .layer.stay .facility {
-  width: 90%;
-  margin: 8rem auto; }
-  .layer.stay .facility .ttlWrap {
-    margin-bottom: 3rem; }
-  .layer.stay .facility .facility__wrap {
+  width: 96%;
+  margin: 0 auto;
+  padding: 8rem 2rem;
+  background: #f7fafa;
+  border-radius: 4px; }
+  .layer.stay .facility + .facility {
+    margin-top: 2rem; }
+  .layer.stay .facility.other {
+    background: none; }
+  .layer.stay .facility .ttl {
+    text-align: center; }
+  .layer.stay .facility .desc {
     margin-top: 4rem; }
-    .layer.stay .facility .facility__wrap dl + dl {
-      margin-top: 3rem; }
-    .layer.stay .facility .facility__wrap dt {
-      font-weight: bold; }
-    .layer.stay .facility .facility__wrap dd {
-      margin-top: 1rem;
-      font-size: 1.5rem; }
-      .layer.stay .facility .facility__wrap dd span {
-        display: block;
-        margin-top: 1rem;
-        font-size: 1.4rem; }
 
 .layer.days .intro .lead {
   background: rgba(255, 255, 255, 0.4); }
@@ -765,11 +801,12 @@ img {
     text-align: center;
     background: rgba(255, 255, 255, 0.9);
     transform: none; }
+  .header.header02 .header__nav {
+    background: rgba(6, 23, 36, 0.9); }
   .header .header__navLink {
     line-height: 40px; }
   .header .header__nav.enter {
     display: block;
-    background: rgba(255, 255, 255, 0.9);
     opacity: 1;
     animation: fadeIn 0.3s cubic-bezier(0.23, 1, 0.32, 1) 0s 1 normal;
     -webkit-animation: fadeIn 0.3s cubic-bezier(0.23, 1, 0.32, 1) 0s 1 normal; }
@@ -820,8 +857,8 @@ img {
       margin: 0 1rem; }
     .header .header__nav .header__navLink.story {
       width: 55px; }
-    .header .header__nav .header__navLink.assemble {
-      width: 96px; }
+    .header .header__nav .header__navLink.nurture {
+      width: 84px; }
     .header .header__nav .header__navLink.stay {
       width: 40px; }
     .header .header__nav .header__navLink.days {
@@ -829,8 +866,8 @@ img {
 
   .header02 .header__navLink.story {
     background-image: url(../images/ttl_story_wt.svg); }
-  .header02 .header__navLink.assemble {
-    background-image: url(../images/ttl_assemble_wt.svg); }
+  .header02 .header__navLink.nurture {
+    background-image: url(../images/ttl_nurture_wt.svg); }
   .header02 .header__navLink.stay {
     background-image: url(../images/ttl_stay_wt.svg); }
   .header02 .header__navLink.days {
@@ -868,7 +905,7 @@ img {
         margin-right: 0; }
     .footer .footer__copyright {
       text-align: left; }
-    .footer.line::before {
+    .footer::before {
       width: 96%;
       left: 2%; }
 
@@ -925,23 +962,43 @@ img {
     background-position: center 90%; }
   .top .stay {
     padding: 16rem 2rem; }
-  .top .assemble .heading,
+  .top .nurture .heading,
   .top .stay .heading,
   .top .days .heading,
   .top .meguriya .heading {
     margin-bottom: 3rem; }
+  .top .sns {
+    width: calc(1100px);
+    max-width: 90%;
+    margin: 0 auto;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap; }
+    .top .sns .sns__item {
+      padding: 8rem 0;
+      width: 35%; }
+      .top .sns .sns__item.ig {
+        width: 60%;
+        margin-left: 5%; }
+      .top .sns .sns__item .sns__ttl {
+        font-size: 2rem; }
+      .top .sns .sns__item .prof {
+        width: 8rem; }
 
   .layer .headingWrap {
     padding: 10rem 0 6rem; }
   .layer .heading {
     width: 132px;
     height: 50px; }
-  .layer.assemble .heading {
-    width: 202px; }
+  .layer.nurture .heading {
+    width: 180px; }
   .layer .heading__desc {
     font-size: 2rem; }
   .layer .intro {
-    padding-bottom: 20vw; }
+    padding-bottom: 25vw; }
     .layer .intro .lead {
       font-size: 1.6rem; }
   .layer .intro::before {
@@ -953,15 +1010,15 @@ img {
     max-width: 90%;
     position: relative; }
     .layer .section .txtWrap {
-      width: 40%;
+      width: 45%;
       margin-left: 5%; }
   .layer .section::after {
-    width: 50%;
+    width: 38%;
     height: 0;
     padding-top: 50%;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: -12rem;
+    right: 4rem;
     background-position: top; }
   .layer .section02 {
     margin-top: 14rem; }
@@ -970,88 +1027,27 @@ img {
   .layer .section02::after {
     right: auto;
     left: 0; }
-
-  .layer.story .txtWrap {
-    width: calc(860px);
-    max-width: 90%; }
-  .layer.story .txtWrap + .txtWrap {
-    margin-top: 12rem; }
-  .layer.story .txtWrap + .txtWrap::before {
-    width: 5%;
-    top: -6rem; }
-
-  .layer.assemble .intro + .section {
-    margin-top: -10rem; }
-  .layer.assemble .link {
-    margin-top: 16rem; }
-    .layer.assemble .link .link__wrap {
-      width: calc(1100px);
-      max-width: 90%;
-      margin: 0 auto;
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flex;
-      display: -o-flex;
-      display: flex;
-      flex-wrap: wrap; }
-      .layer.assemble .link .link__wrap .link__box {
-        width: 50%; }
-      .layer.assemble .link .link__wrap .link__box.days {
-        margin-top: 0; }
-      .layer.assemble .link .link__wrap .link__box::before {
-        height: 0;
-        padding-top: 75%; }
-
-  .layer.stay .intro {
-    padding-bottom: 25vw; }
-  .layer.stay .karip {
+  .layer .price {
     width: calc(1200px);
     max-width: 90%;
-    padding: 8rem 12rem;
+    padding: 10rem 12rem;
     overflow: hidden;
     position: relative; }
-    .layer.stay .karip::after {
+    .layer .price::after {
       clear: both;
-      width: 30%;
+      width: 22%;
+      height: 30vw;
       position: absolute;
-      left: 5%;
+      left: 8%;
       bottom: 8rem; }
-    .layer.stay .karip .ttl {
+    .layer .price .ttl {
       float: left; }
-    .layer.stay .karip .txtWrap {
+    .layer .price .txtWrap {
       margin-left: 35%;
       width: 65%; }
-  .layer.stay .price {
-    width: 100%;
-    margin: 10rem auto;
-    padding: 10rem 0; }
-    .layer.stay .price .inr {
-      width: calc(1000px);
-      max-width: 90%;
-      margin: 0 auto; }
-      .layer.stay .price .inr .txtWrap {
-        width: 100%;
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flex;
-        display: -o-flex;
-        display: flex;
-        flex-wrap: wrap; }
-      .layer.stay .price .inr .txtInr {
-        width: 45%; }
-        .layer.stay .price .inr .txtInr + .txtInr {
-          margin: 0 0 0 10%; }
-  .layer.stay .facility {
-    width: calc(1000px);
-    max-width: 90%;
-    margin: 12rem auto; }
-    .layer.stay .facility .ttlWrap {
-      text-align: center; }
-    .layer.stay .facility img {
-      display: block;
-      width: 86%;
-      margin: 0 auto; }
-    .layer.stay .facility .facility__wrap dl {
+  .layer .requirements__wrap {
+    margin-top: 8rem; }
+    .layer .requirements__wrap dl {
       width: 100%;
       display: -webkit-flex;
       display: -moz-flex;
@@ -1059,11 +1055,80 @@ img {
       display: -o-flex;
       display: flex;
       flex-wrap: wrap; }
-    .layer.stay .facility .facility__wrap dt {
+    .layer .requirements__wrap dt {
       width: 15%; }
-    .layer.stay .facility .facility__wrap dd {
+    .layer .requirements__wrap dd {
       width: 85%;
       margin-top: 0; }
+
+  .layer.story .txtWrap {
+    width: calc(860px);
+    max-width: 90%; }
+    .layer.story .txtWrap span {
+      display: inline-block;
+      margin-left: 2rem; }
+      .layer.story .txtWrap span + br {
+        display: block; }
+
+  .layer.nurture .intro + .section {
+    margin-top: -10rem; }
+  .layer.nurture .retreat {
+    padding: 12rem 0 4rem; }
+    .layer.nurture .retreat .ttlWrap {
+      text-align: center; }
+    .layer.nurture .retreat .retreat__item {
+      width: calc(1200px);
+      max-width: 90%;
+      padding: 10rem 12rem;
+      margin: 8rem auto; }
+      .layer.nurture .retreat .retreat__item .subTtlWrap {
+        position: relative; }
+        .layer.nurture .retreat .retreat__item .subTtlWrap::after {
+          width: 20%;
+          height: 20vw;
+          margin: 0;
+          position: absolute;
+          top: 0;
+          right: -4rem; }
+      .layer.nurture .retreat .retreat__item.item02 .subTtlWrap::after {
+        width: 40%;
+        height: 30vw;
+        top: 16rem; }
+      .layer.nurture .retreat .retreat__item span.pc {
+        display: inline-block; }
+      .layer.nurture .retreat .retreat__item time + span {
+        width: 90%;
+        margin-left: 10%; }
+      .layer.nurture .retreat .retreat__item .oneday {
+        position: relative; }
+        .layer.nurture .retreat .retreat__item .oneday::after {
+          content: "";
+          display: block;
+          width: 40%;
+          height: 14vw;
+          background: url(../images/stay_img01.png) center bottom no-repeat;
+          background-size: 100%;
+          position: absolute;
+          bottom: 0;
+          right: 0; }
+
+  .layer.stay .intro {
+    padding-bottom: 25vw; }
+  .layer.stay .subTxt {
+    text-align: center;
+    margin-bottom: 8rem; }
+  .layer.stay .facility {
+    width: 96%; }
+    .layer.stay .facility .facility__inr {
+      width: calc(1000px);
+      max-width: 90%;
+      margin: 6rem auto; }
+    .layer.stay .facility .desc {
+      text-align: center; }
+    .layer.stay .facility img {
+      display: block;
+      width: 86%;
+      margin: 0 auto; }
 
   .layer.days .intro {
     padding-bottom: 10vw; }
