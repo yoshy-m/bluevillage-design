@@ -215,8 +215,8 @@ img {
     background-size: contain;
     position: absolute;
     top: 50%;
-    left: 2rem;
-    transform: translate(0, -50%); }
+    left: 50%;
+    transform: translate(-50%, -50%); }
   .header .header__nav .header__navList {
     width: 100%;
     text-align: center;
@@ -846,7 +846,8 @@ img {
     .header .header__logoLink {
       width: 168px;
       height: 35px;
-      left: 4rem; }
+      left: 4rem;
+      transform: translate(0, -50%); }
     .header .header__nav .header__navList {
       width: auto;
       left: auto;
