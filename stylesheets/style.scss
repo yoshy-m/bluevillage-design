@@ -188,7 +188,7 @@ body {
   background: white;
   color: #06243c;
   font-family:"Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-style: normal;
   font-weight: 400;
   line-height: 2em;
@@ -300,6 +300,7 @@ img{
 .heading{
   text-indent: 100%;
   overflow: hidden;
+  white-space: nowrap;
   width: 105px;
   height: 40px;
   background: url(../images/ttl_story_wt.svg) center no-repeat;
@@ -321,6 +322,10 @@ img{
   width: 160px;
   background-image: url(../images/ttl_meguriya.svg);
 }
+.innerjourney .heading{
+  width: 100%;
+  background-image: url(../images/ttl_innerjourney.png);
+}
 
 .ttl{
   font-size: 2.2rem;
@@ -334,6 +339,7 @@ img{
   width: 80%;
   margin: 1rem auto;
   padding-left: 2rem;
+  height: 5rem;
   line-height: 5rem;
   color: #06243c;
   border: 1px solid #06243c;
@@ -465,9 +471,9 @@ img{
   }
   .section{
     width: 96%;
-    margin: 0 auto;
+    margin: 2rem auto;
     padding: 8rem 2rem;
-    border-radius: 4px;
+    border-radius: 10px;
     position: relative;
 
     .heading{
@@ -525,8 +531,10 @@ img{
     display: none;
   }
   .story,
-  .meguriya{
+  .meguriya,
+  .innerjourney{
     color: white;
+    text-shadow: 0 0 20px rgba($color: #0c264e, $alpha: .8);
 
     .btn{
       color: white;
@@ -555,6 +563,13 @@ img{
       width: 60%;
       margin: 2rem auto 0;
     }
+  }
+  .innerjourney{
+    &::after{
+      display: none;
+    }
+    background: url(../images/bg_innerjourney_sp.jpg) center no-repeat;
+    background-size: cover;
   }
   .sns{
     width: 90%;
@@ -1096,6 +1111,9 @@ img{
       border-color: white;
     }
   }
+  .heading{
+    margin: 0 auto;
+  }
 }
 
 @media screen and (min-width:768px){
@@ -1168,6 +1186,7 @@ img{
 
   .btn{
     width: calc(370px);
+    height: 70px;
     line-height: 70px;
     border-radius: 35px;
     padding-left: 4rem;
@@ -1283,7 +1302,7 @@ img{
       width: 20%;
       height: 0;
       padding-top: 24%;
-      left: 60%;
+      left: 15%;
     }
     .story{
       background-position: center 90%;
@@ -1296,6 +1315,13 @@ img{
     .days .heading,
     .meguriya .heading{
       margin-bottom: 3rem;
+    }
+    .innerjourney .heading{
+      width: 90%;
+    }
+  .innerjourney{
+      background: url(../images/bg_innerjourney.jpg) center no-repeat;
+      background-size: cover;
     }
     .sns{
       width: calc(1100px);
