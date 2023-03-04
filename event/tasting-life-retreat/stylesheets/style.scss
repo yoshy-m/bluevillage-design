@@ -723,7 +723,7 @@ section:nth-child(n+3) .heading{
     width: 160px;
     height: 34px;
     margin: 3rem auto 2rem; 
-    background: url(../../../../images/logo.svg);
+    background: url(../../../images/logo.svg) no-repeat;
     background-size: contain;
   }
   .menu__item{
@@ -737,15 +737,18 @@ section:nth-child(n+3) .heading{
       width: 2.2rem;
       height: 2.2rem;
       margin: 1.5rem;
-      background: url(../../../../images/ico_fb.png) no-repeat center center;
+      background: url(../../../images/ico_fb.png) no-repeat center center;
       background-size: contain;
     }
     .ig{
-      background-image: url(../../../../images/ico_ig.png);
+      background-image: url(../../../images/ico_ig.png);
     }
     .yt{
-      background-image: url(../../../../images/ico_yt.png);
+      background-image: url(../../../images/ico_yt.png);
     }
+  }
+  a{
+    color: #33436c;
   }
   .footer__copyright{
     margin-top: 3rem;
@@ -1008,12 +1011,34 @@ section:nth-child(n+3) .heading{
     }
   }
   .footer{
-    .menu{
-      margin-top: 40px;
+    .footer__wrap{
+      width: calc(1200px);
+      max-width: 90%;
+      margin: 0 auto;
+      position: relative;      
     }
-    .menu__item a{
-      width: 2.6rem;
-      height: 2.6rem;
+    .footer__logo{
+      margin-left: 0;
+    }
+    .footer__info{
+      position: absolute;
+      top: -5rem;
+      right: 0;
+      text-align: right;
+
+      .menu{
+        margin-top: 40px;
+      }
+      .menu__item a{
+        width: 2rem;
+        height: 2rem;
+      }
+      .menu__item:last-child a{
+        margin-right: 0;
+      }
+    }
+    .footer__copyright{
+      text-align: left;
     }
   }
 }
