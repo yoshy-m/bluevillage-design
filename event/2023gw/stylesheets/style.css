@@ -134,20 +134,18 @@ svg:not(:root) {
   overflow: hidden; }
 
 ::-moz-selection {
-  background-color: #b3d4fc;
-  color: black;
+  background-color: #fff;
   text-shadow: none; }
 
 ::selection {
-  background-color: #b3d4fc;
-  color: black;
+  background-color: #fff;
   text-shadow: none; }
 
 body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   background: #d2dce9;
-  color: #5e6416;
+  color: #0e6375;
   font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
   font-size: 1.5rem;
   font-style: normal;
@@ -184,16 +182,19 @@ em {
   font-style: normal; }
 
 ::-moz-selection {
-  background: #faef3a; }
+  background: #fff; }
 
 ::selection {
-  background: #faef3a; }
+  background: #fff; }
 
 /*
 style
 */
 img {
   width: 100%; }
+
+.wrap {
+  position: relative; }
 
 .element {
   opacity: 0;
@@ -351,33 +352,36 @@ main {
     position: absolute;
     z-index: 0;
     top: 10%;
-    left: 4%;
+    left: 2%;
     overflow: hidden;
     width: 96%;
-    height: 70%;
+    height: 86%;
     background: url(../images/visual_sp.png) no-repeat;
     background-size: cover; }
   .mainVisual .txtWrap {
     width: 100%;
     position: absolute;
-    bottom: 10%; }
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
     .mainVisual .txtWrap .mainTtl {
       text-indent: 100%;
       white-space: nowrap;
       overflow: hidden;
-      background: url(../images/title_sp.png) no-repeat;
-      width: 86%;
-      padding-top: 33%;
-      margin-left: 7%;
+      background: url(../images/title.png) no-repeat;
+      width: 100%;
+      padding-top: 51%;
       background-size: 100%; }
-  .mainVisual .subTxtWrap {
-    position: absolute;
-    left: 5%;
-    bottom: 3%;
-    font-family: 'Lato', sans-serif;
-    font-size: 1.4rem;
-    line-height: 2em;
-    letter-spacing: .1em; }
+    .mainVisual .txtWrap .subTxt {
+      font-family: 'Shippori Mincho',"游明朝体", "Yu Mincho", "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+      color: white;
+      text-align: center;
+      font-weight: bold;
+      text-shadow: 0 4px 20px #0F6637;
+      font-size: 1.3em;
+      line-height: 1.5em;
+      letter-spacing: .1em;
+      margin-top: -60px; }
   .mainVisual .scrolldown {
     position: absolute;
     right: 10px;
@@ -420,6 +424,12 @@ section:nth-child(n+3) .heading {
   text-align: center;
   font-size: 1.6em; }
 
+p:nth-of-type(n+2) {
+  margin-top: 20px; }
+
+.bold {
+  font-weight: bold; }
+
 .btn {
   display: block;
   text-align: center;
@@ -449,7 +459,8 @@ section:nth-child(n+3) .heading {
   z-index: 10; }
 
 .about {
-  position: relative; }
+  position: relative;
+  margin-top: 80px; }
   .about::before {
     content: "";
     display: block;
@@ -460,102 +471,105 @@ section:nth-child(n+3) .heading {
     position: absolute;
     top: -150px;
     right: -50px; }
-  .about .about__headingWrap {
-    margin: 0 5%; }
-  .about .about__txtWrap {
-    margin: 40px 5% 60px;
-    position: relative;
-    z-index: 2;
-    text-shadow: 0 0 10px white; }
-    .about .about__txtWrap p:nth-child(n+2) {
-      margin-top: 20px; }
-  .about .feature01 .feature01__list {
+  .about .about__inr {
     width: 90%;
     margin: 0 auto; }
-  .about .feature01 .feature01__item {
-    margin-top: 80px; }
-    .about .feature01 .feature01__item .heading {
-      margin-bottom: 20px; }
-    .about .feature01 .feature01__item .emphasis {
-      background: #F1EFB9; }
-    .about .feature01 .feature01__item .feature01__imgWrap {
-      margin-top: 40px; }
-      .about .feature01 .feature01__item .feature01__imgWrap img {
-        border-radius: 20px; }
+  .about .about__txtWrap {
+    margin: 40px 0 80px; }
+  .about .bold {
+    margin-top: 30px;
+    font-size: 1.2em; }
 
-.timeline {
-  width: 94%;
-  margin: 0 auto;
-  padding: 80px 5%;
-  background: rgba(255, 255, 255, 0.5);
-  border-radius: 20px; }
-  .timeline .timeline__item {
-    margin-top: 60px; }
-    .timeline .timeline__item span {
-      font-size: .9em;
-      font-weight: bold;
-      margin-right: 10px; }
-  .timeline .timeline__ttl {
-    font-family: 'Shippori Mincho',"游明朝体", "Yu Mincho", "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
-    font-size: 1.2em;
-    margin-bottom: 20px; }
-
-.feature {
-  position: relative; }
-  .feature::before {
-    content: "";
-    display: block;
-    width: 234px;
-    height: 102px;
-    background: url(../images/feature_01.png);
-    background-size: 100%;
-    position: absolute;
-    top: -50px;
-    left: 50%;
-    transform: translate(-50%, 0); }
-  .feature .feature__list {
-    margin-top: 60px; }
-    .feature .feature__list .feature__item:nth-child(n+2) {
-      margin-top: 60px; }
-    .feature .feature__list .feature__item .feature__txtWrap {
-      width: 85%;
-      margin-left: 10%;
-      line-height: 2em;
-      position: relative; }
-      .feature .feature__list .feature__item .feature__txtWrap::before {
-        content: "";
-        display: block;
-        width: 1px;
-        height: 150%;
-        background: #b7ba8d;
-        position: absolute;
-        top: 0;
-        left: -5%; }
-      .feature .feature__list .feature__item .feature__txtWrap .feature__ttl {
-        font-family: 'Shippori Mincho',"游明朝体", "Yu Mincho", "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
-        font-size: 2rem;
-        font-style: italic; }
-      .feature .feature__list .feature__item .feature__txtWrap p {
-        margin-top: 20px; }
-    .feature .feature__list .feature__item .feature__imgWrap {
-      width: 98%;
-      margin: 20px 0 0 2%; }
-
-.feature03 {
+.feature .feature__list {
   width: 90%;
   margin: 0 auto; }
-  .feature03 .feature03__item {
-    margin-top: 80px; }
-    .feature03 .feature03__item:first-child p:first-of-type {
-      text-align: center; }
-    .feature03 .feature03__item p:nth-of-type(n+2) {
-      margin-top: 20px; }
-  .feature03 .heading {
+.feature .feature__item {
+  margin-top: 80px; }
+  .feature .feature__item .heading {
+    margin-bottom: 20px; }
+  .feature .feature__item .emphasis {
+    background: #F1EFB9; }
+  .feature .feature__item .feature__imgWrap {
+    margin-top: 40px; }
+
+.retreat {
+  color: #5e6416;
+  background: url(../images/bg_01.png) center;
+  background-size: cover;
+  margin: -220px 0 0;
+  padding: 220px 0; }
+  .retreat.retreat02 {
+    background: url(../images/bg_02.png) center;
+    background-size: cover;
+    color: #b8b880; }
+  .retreat .retreat__inr {
+    width: 90%;
+    margin: 0 auto; }
+  .retreat .ttl {
+    margin: 20px -3% 0; }
+  .retreat .date {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    margin-top: 0; }
+  .retreat .lead,
+  .retreat .copy {
+    font-family: 'Shippori Mincho',"游明朝体", "Yu Mincho", "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+    font-weight: bold;
+    font-size: 1.1em; }
+  .retreat .lead {
+    text-align: center;
     line-height: 1.6em; }
-  .feature03 .feature03__imgWrap {
-    margin: 30px 0 20px; }
-  .feature03 img {
-    border-radius: 20px; }
+  .retreat .copy {
+    margin-top: 40px; }
+  .retreat .btn__more {
+    display: block;
+    width: 200px;
+    line-height: 40px;
+    border-radius: 20px;
+    margin: 40px auto 0;
+    background-color: white;
+    color: #5e6416;
+    text-align: center;
+    font-weight: bold; }
+
+.price {
+  width: 94%;
+  margin: 0 auto;
+  padding: 60px 5%;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  font-weight: bold;
+  text-align: center; }
+  .price .large {
+    font-size: 1.2em; }
+  .price .emphasis {
+    display: inline-block;
+    font-size: 1.5em;
+    background: #dfea5e; }
+  .price .price__item {
+    margin-top: 40px;
+    line-height: 1.6em; }
+    .price .price__item:last-child::before {
+      content: "";
+      display: block;
+      margin: 40px auto;
+      width: 80px;
+      height: 1px;
+      background: #0e6375; }
+    .price .price__item:last-child .emphasis {
+      margin-top: 20px; }
+    .price .price__item p:nth-of-type(n+2) {
+      margin-top: 10px; }
+
+.access .access__inr {
+  width: 90%;
+  margin: 0 auto; }
+.access .heading {
+  margin-bottom: 20px; }
+.access .access__list {
+  margin-top: 30px; }
+.access .access__item:nth-child(2) {
+  margin-top: 60px; }
 
 .info {
   position: relative; }
@@ -572,15 +586,15 @@ section:nth-child(n+3) .heading {
   .info .info__list {
     width: 96%;
     margin: 60px auto 40px;
-    border: 2px solid #9da166; }
+    border: 2px solid #699EA9; }
     .info .info__list .info__item:nth-child(n+2) {
-      border-top: 2px solid #9da166; }
+      border-top: 2px solid #699EA9; }
     .info .info__list .info__item * {
       padding: 5%;
       font-weight: bold;
       font-size: 1.6rem; }
     .info .info__list .info__item dt {
-      border-bottom: 1px solid #b7ba8d; }
+      border-bottom: 1px solid #699EA9; }
     .info .info__list .info__item span,
     .info .info__list .info__item .add {
       padding: 0;
@@ -620,16 +634,6 @@ section:nth-child(n+3) .heading {
     line-height: 2em; }
   .member .member__item:nth-child(n+2) {
     margin-top: 80px; }
-
-.bnr {
-  width: 96%;
-  margin: 80px auto 0;
-  text-align: center; }
-  .bnr p {
-    font-family: 'Shippori Mincho',"游明朝体", "Yu Mincho", "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
-    font-weight: bold;
-    font-size: 1.2em;
-    margin-bottom: 20px; }
 
 .footer {
   text-align: center;
@@ -706,31 +710,23 @@ section:nth-child(n+3) .heading {
         width: 32px; }
 
   .mainVisual {
-    min-height: 600px; }
+    min-height: 660px; }
     .mainVisual .pc {
       display: inline-block; }
     .mainVisual .imgBox {
       width: 94%;
-      height: 80%;
+      height: 90%;
       top: 5%;
       left: 3%;
       background: url(../images/visual.png) no-repeat;
       background-size: 100%;
       background-position: top; }
     .mainVisual .txtWrap {
-      bottom: 8%; }
-      .mainVisual .txtWrap .mainTtl {
-        width: 70%;
-        margin-left: 15%;
-        padding-top: 7%;
-        background: url(../images/title.png) no-repeat;
-        background-size: 100%; }
-    .mainVisual .subTxtWrap {
-      width: 100%;
-      text-align: center;
-      font-size: 2.2rem;
-      left: 0;
-      bottom: 3%; }
+      width: 45%; }
+      .mainVisual .txtWrap .subTxt {
+        margin-top: -80px;
+        font-size: 1.5em;
+        line-height: 1.6em; }
     .mainVisual .scrolldown {
       right: 3%; }
 
@@ -739,6 +735,18 @@ section:nth-child(n+3) .heading {
 
   section:nth-child(n+3) .heading {
     font-size: 1.8em; }
+
+  .heading {
+    font-size: 1.6em; }
+
+  p:nth-of-type(n+2) {
+    margin-top: 30px; }
+
+  .btn {
+    width: 400px;
+    line-height: 80px;
+    border-radius: 40px;
+    margin-top: 60px; }
 
   .btn.fixed {
     right: 30px;
@@ -757,88 +765,62 @@ section:nth-child(n+3) .heading {
       right: -30px; }
     .about .bold {
       margin-top: 40px; }
-    .about .feature01 .feature01__list {
-      width: 80%; }
-    .about .feature01 .feature01__item {
-      max-width: 1200px;
-      display: flex;
-      text-align: left;
-      margin-top: 80px; }
-      .about .feature01 .feature01__item .feature01__txtWrap {
-        width: 55%; }
-      .about .feature01 .feature01__item .feature01__imgWrap {
-        width: 40%;
-        margin-top: 0;
-        margin-left: 5%; }
-        .about .feature01 .feature01__item .feature01__imgWrap img {
-          border-radius: 30px; }
-      .about .feature01 .feature01__item:nth-child(odd) {
-        flex-direction: row-reverse;
-        margin-left: 0; }
-        .about .feature01 .feature01__item:nth-child(odd) .feature01__imgWrap {
-          margin-right: 5%;
-          margin-left: 0; }
 
-  .timeline {
-    width: 90%;
-    max-width: 1300px;
-    padding: 120px 5%; }
-    .timeline .timeline__list {
+  .feature .feature__list {
+    width: 80%; }
+  .feature .feature__item {
+    max-width: 1200px;
+    display: flex;
+    text-align: left;
+    margin-top: 120px; }
+    .feature .feature__item .feature__txtWrap {
+      width: 55%; }
+    .feature .feature__item .feature__imgWrap {
+      width: 40%;
+      margin-top: 0;
+      margin-left: 5%; }
+    .feature .feature__item:first-child {
+      flex-direction: row-reverse;
+      margin-left: 0; }
+      .feature .feature__item:first-child .feature__imgWrap {
+        margin-right: 5%;
+        margin-left: 0; }
+
+  .retreat {
+    padding: 320px 0;
+    margin-top: -320px; }
+    .retreat .retreat__inr {
+      width: 1000px;
+      text-align: center; }
+    .retreat .lead,
+    .retreat .copy {
+      font-size: 1.6em;
+      line-height: 2em; }
+    .retreat .date {
+      font-size: 1.4em;
+      letter-spacing: .1em; }
+    .retreat .btn__more {
+      width: 240px;
+      line-height: 50px;
+      border-radius: 25px;
+      font-size: 1.1em;
+      margin-top: 60px; }
+
+  .price {
+    width: 960px;
+    padding: 120px 0; }
+
+  .access {
+    text-align: center; }
+    .access .access__inr {
+      width: 960px; }
+    .access .access__list {
       display: flex;
       margin-top: 60px; }
-    .timeline .timeline__item {
-      width: 100%;
-      margin: 0 2%; }
-    .timeline .timeline__ttl {
-      height: 80px;
-      margin-bottom: 10px; }
-
-  .feature::before {
-    width: 391px;
-    padding-top: 171px; }
-  .feature .feature__list {
-    margin-top: 120px; }
-    .feature .feature__list .feature__item {
-      display: flex;
-      align-items: center; }
-      .feature .feature__list .feature__item:nth-child(n+2) {
-        margin: 0; }
-      .feature .feature__list .feature__item .feature__txtWrap {
-        width: 43%;
-        margin-left: 7%; }
-        .feature .feature__list .feature__item .feature__txtWrap::before {
-          display: none; }
-        .feature .feature__list .feature__item .feature__txtWrap .feature__ttl {
-          padding-top: 23px; }
-        .feature .feature__list .feature__item .feature__txtWrap p {
-          position: relative;
-          margin-top: 60px; }
-          .feature .feature__list .feature__item .feature__txtWrap p::before {
-            content: "";
-            display: block;
-            width: 120%;
-            height: 1px;
-            background: #b7ba8d;
-            position: absolute;
-            left: 0;
-            top: -30px; }
-      .feature .feature__list .feature__item:nth-child(2n) {
-        flex-direction: row-reverse; }
-        .feature .feature__list .feature__item:nth-child(2n) .feature__txtWrap {
-          width: 40%;
-          margin: 0 5% 0 5%; }
-          .feature .feature__list .feature__item:nth-child(2n) .feature__txtWrap p::before {
-            left: inherit;
-            right: 0; }
-      .feature .feature__list .feature__item .feature__imgWrap {
-        width: 50%;
-        margin: 0; }
-
-  .feature03 {
-    width: 960px;
-    text-align: center; }
-    .feature03 .feature03__item:nth-child(2) {
-      margin-top: 120px; }
+    .access .access__item {
+      width: 48%; }
+    .access .access__item:nth-child(2) {
+      margin: 0 0 0 4%; }
 
   .info::before {
     width: 441px;
@@ -858,7 +840,7 @@ section:nth-child(n+3) .heading {
         width: 20%;
         border-top: none;
         border-bottom: none;
-        border-right: 1px solid #b7ba8d; }
+        border-right: 1px solid #699EA9; }
       .info .info__list .info__item dd {
         width: 80%; }
       .info .info__list .info__item .add {
@@ -870,11 +852,6 @@ section:nth-child(n+3) .heading {
     font-size: 1.5rem; }
     .info .addInfo p:nth-child(n+2) {
       margin-top: 5px; }
-  .info .btn {
-    width: 400px;
-    line-height: 80px;
-    border-radius: 40px;
-    margin-top: 60px; }
 
   .member .member__list {
     display: flex;
@@ -896,12 +873,6 @@ section:nth-child(n+3) .heading {
           margin-top: 0; }
           .member .member__list .member__item .member__txtWrap .ttl span {
             margin-left: 20px; }
-
-  .bnr {
-    width: 1000px;
-    margin-top: 160px; }
-    .bnr p {
-      font-size: 1.3em; }
 
   .footer .footer__wrap {
     width: calc(1200px);
